@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -15,9 +17,9 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-         User::factory()->create([
-             'name' => 'Test User',
-             'email' => 'test@example.com',
-         ]);
+        User::factory()->create([
+            'name'  => 'Test User',
+            'email' => 'test@example.com',
+        ]);
     }
 }
