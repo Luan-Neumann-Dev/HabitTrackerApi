@@ -47,6 +47,16 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "lint": "pint",
+        "rector": "rector",
+        "test:lint": "pint --test",
+        "test:rector": "rector --dry-run",
+        "test:pest": "pest --parallel --compact",
+        "test": [
+            "@test:lint",
+            "@test:rector",
+            "@test:pest"
         ]
     },
     "extra": {
